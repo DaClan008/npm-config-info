@@ -8,14 +8,17 @@
     "url": "git+https://github.com/DaClan008/npm-config-info.git"
   },
   "scripts": {
-    "test": "jest --coverage",
+    "test": "jest",
     "test:w": "jest --watchAll",
-    "coverage": "nyc npm run test",
-    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov"
+    "coverage": "jest --coverageReporters=text-lcov | coveralls"
   },
   "jest": {
     "coverageDirectory": "./coverage/",
-    "collectCoverage": true
+    "collectCoverage": true,
+    "coveragePathIgnorePatterns": [
+      "/index.js",
+      "/test/"
+    ]
   },
   "engines": {
     "node": ">=8"
@@ -41,10 +44,7 @@
   "devDependencies": {
     "@types/jest": "^24.0.25",
     "coveralls": "^3.0.9",
-    "install": "^0.13.0",
-    "jest": "^24.9.0",
-    "npm": "^6.13.6",
-    "nyc": "^15.0.0"
+    "jest": "^24.9.0"
   },
   "dependencies": {}
 }

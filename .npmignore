@@ -1,0 +1,8 @@
+coverage
+.vscode
+.nyc_output
+test
+typings
+.gitignore
+.travis.yml
+codecov.yml
