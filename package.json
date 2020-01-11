@@ -10,7 +10,8 @@
   "scripts": {
     "test": "jest",
     "test:w": "jest --watchAll",
-    "coverage": "jest --coverageReporters=text-lcov | coveralls"
+    "coverage": "jest --coverageReporters=text-lcov | coveralls && codecov",
+    "codecov": "jest && codecov"
   },
   "jest": {
     "coverageDirectory": "./coverage/",
@@ -43,6 +44,7 @@
   "homepage": "https://github.com/DaClan008/npm-config-info.git#readme",
   "devDependencies": {
     "@types/jest": "^24.0.25",
+    "codecov": "^3.6.1",
     "coveralls": "^3.0.9",
     "jest": "^24.9.0"
   },

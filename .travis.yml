@@ -9,3 +9,6 @@ script: npm run coverage
 
 notifications:
     - emails: false
+
+after_success:
+    - bash <(curl -s https://codecov.io/bash) -t="$CODECOV"
