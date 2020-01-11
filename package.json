@@ -17,6 +17,9 @@
     "coverageDirectory": "./coverage/",
     "collectCoverage": true
   },
+  "engines": {
+    "node": ">=8"
+  },
   "keywords": [
     "npm",
     "init",

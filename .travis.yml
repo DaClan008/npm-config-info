@@ -1,16 +1,12 @@
 language: node_js
-
 node_js:
-    - "12"
-    - "10"
-    - "8"
-
-install:
-    - inpm install -g codecov
+    - "node"
+    - "iojs"
 
 script: npm run coverage && npm run report-coverage
-before_script: npm -d install
+before_script:
+    - npm -d install
 
-after_script:
-    - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js --verbose
-    - bash <(curl -s https://codecov.io/bash)
+after_success:
+    - "./node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls"
+    - codecov
