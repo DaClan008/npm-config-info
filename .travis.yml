@@ -1,7 +1,8 @@
 language: node_js
 node_js:
-    - "node"
-    - "iojs"
+    - 12
+    - 10
+    - 8
 
 script: npm run coverage && npm run report-coverage
 before_script:
