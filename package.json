@@ -11,7 +11,7 @@
     "test": "jest --coverage",
     "test:w": "jest --watchAll",
     "coverage": "nyc npm run test",
-    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
+    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov"
   },
   "jest": {
     "coverageDirectory": "./coverage/",
