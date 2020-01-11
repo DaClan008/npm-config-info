@@ -5,7 +5,10 @@ node_js:
     - 8
 cache: npm
 
-script: npm run coverage && npm run condecov
+script: npm run coverage
+
+after_success:
+    - jest && codecov
 
 notifications:
     - emails: false
