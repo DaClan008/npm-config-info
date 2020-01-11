@@ -1,0 +1,37 @@
+; userconfig C:\Users\Joe\.npmrc
+prefix = "C:\\Users\\Joe\\AppData\\Roaming\\npm"
+; globalconfig C:\Users\Joe\AppData\Roaming\npm\etc\npmrc
+
+; userconfig C:\Users\Joe\.npmrc
+init-author-email = "js@somewhere.com"
+init-author-name = "Joe Soap"
+init-author-url = "http://somewhere.com"
+init-license = "MIT"
+init-version = "0.0.1"
+prefix = "C:\\Users\\Joe\\AppData\\Roaming\\npm"
+
+; globalconfig C:\Users\Joe\AppData\Roaming\npm\etc\npmrc
+; init-author-name = "Piet" (overridden)
+
+; builtin config undefined
+prefix = "C:\\Users\\Joe\\AppData\\Roaming\\npm"
+metrics-registry=C:\\somefolder
+; default values
+cache = "C:\\Users\\Joe\\AppData\\Roaming\\npm-cache"
+globalconfig = "C:\\Users\\Joe\\AppData\\Roaming\\npm\\etc\\npmrc"
+globalignorefile = "C:\\Users\\Joe\\AppData\\Roaming\\npm\\etc\\npmignore"
+; init-author-email = "" (overridden)
+; init-author-name = "" (overridden)
+; init-author-url = "" (overridden)
+; init-license = "ISC" (overridden)
+init-module = "C:\\Users\\Joe\\.npm-init.js"
+; init-version = "1.0.0" (overridden)
+json = false
+key = null
+shell = "C:\\WINDOWS\\system32\\cmd.exe"
+tmp = "C:\\Users\\Joe\\AppData\\Local\\Temp"
+user = 0
+; comment
+userconfig = "C:\\Users\\Joe\\.npmrc"
+version = true
+versions = undefined

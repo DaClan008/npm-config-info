@@ -1,0 +1,33 @@
+{
+  "name": "npm-config-info",
+  "version": "0.0.1",
+  "description": "An easy way to get npm user details or default values stored by npm.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "test:w": "jest --watchAll",
+    "coverage": "nyc npm run test"
+  },
+  "keywords": [
+    "npm",
+    "init",
+    "config",
+    "npm-user",
+    "npm-author",
+    "user",
+    "author",
+    "init",
+    "default",
+    "values"
+  ],
+  "author": "Jan Lehmkuhl <DaClan008@users.noreply.github.com>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/jest": "^24.0.25",
+    "coveralls": "^3.0.9",
+    "install": "^0.13.0",
+    "jest": "^24.9.0",
+    "npm": "^6.13.6",
+    "nyc": "^15.0.0"
+  }
+}

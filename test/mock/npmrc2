@@ -1,0 +1,14 @@
+; userconfig C:\Users\Joe\.npmrc
+prefix = "C:\\Users\\Joe\\AppData\\Roaming\\npm"
+; globalconfig C:\Users\Joe\AppData\Roaming\npm\etc\npmrc
+
+
+prefix = "C:\\Users\\Joe\\AppData\\Roaming\\npm"
+
+; builtin config undefined
+
+; default values
+cache = "C:\\Users\\Joe\\AppData\\Roaming\\npm-cache"
+globalignorefile = "C:\\Users\\Joe\\AppData\\Roaming\\npm\\etc\\npmignore"
+
+init-module = "C:\\Users\\Joe\\.npm-init.js"
