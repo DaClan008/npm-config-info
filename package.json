@@ -10,7 +10,12 @@
   "scripts": {
     "test": "jest --coverage",
     "test:w": "jest --watchAll",
-    "coverage": "nyc npm run test"
+    "coverage": "nyc npm run test",
+    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
   },
   "keywords": [
     "npm",
