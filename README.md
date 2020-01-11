@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/DaClan008/npm-config-info.svg?branch=master)](https://travis-ci.org/DaClan008/npm-config-info.svg?branch=master)
 [![Coverage Status](https://coveralls.io/repos/github/DaClan008/npm-config-info/badge.svg?branch=master)](https://coveralls.io/github/DaClan008/npm-config-info?branch=master)
 [![codecov](https://codecov.io/gh/DaClan008/npm-config-info/branch/master/graph/badge.svg)](https://codecov.io/gh/DaClan008/npm-config-info)
+[![npm](https://img.shields.io/npm/v/npm-config-info)](https://img.shields.io/npm/v/npm-config-info)
 
 Get the config information stored by npm. This include the stored user details and folder information of the npm structure.
 
