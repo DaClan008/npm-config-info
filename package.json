@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "An easy way to get npm user details or default values stored by npm.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaClan008/npm-config-info.git"
+  }
   "scripts": {
     "test": "jest --coverage",
     "test:w": "jest --watchAll",
@@ -22,6 +26,10 @@
   ],
   "author": "Jan Lehmkuhl <DaClan008@users.noreply.github.com>",
   "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/DaClan008/npm-config-info.git/issues"
+  },
+  "homepage": "https://github.com/DaClan008/npm-config-info.git#readme",
   "devDependencies": {
     "@types/jest": "^24.0.25",
     "coveralls": "^3.0.9",
