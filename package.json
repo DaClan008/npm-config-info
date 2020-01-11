@@ -6,7 +6,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DaClan008/npm-config-info.git"
-  }
+  },
   "scripts": {
     "test": "jest --coverage",
     "test:w": "jest --watchAll",
