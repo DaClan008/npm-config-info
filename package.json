@@ -10,8 +10,7 @@
   "scripts": {
     "test": "jest",
     "test:w": "jest --watchAll",
-    "coverage": "jest --coverageReporters=text-lcov | coveralls",
-    "codecov": "jest && codecov"
+    "coverage": "jest --coverageReporters=text-lcov | coveralls | codecov"
   },
   "jest": {
     "coverageDirectory": "./coverage/",
