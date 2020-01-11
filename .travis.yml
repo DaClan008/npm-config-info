@@ -11,4 +11,4 @@ notifications:
     - emails: false
 
 after_success:
-    - bash <(curl -s https://codecov.io/bash) -t=CODECOV
+    - ./node_modules/.bin/condecov --token=CODECOV
