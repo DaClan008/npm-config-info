@@ -5,10 +5,7 @@ node_js:
     - 8
 cache: npm
 
-script: npm run coverage
+script: npm run coverage && npm run condecov
 
 notifications:
     - emails: false
-
-after_success:
-    - ./node_modules/.bin/condecov --token=CODECOV

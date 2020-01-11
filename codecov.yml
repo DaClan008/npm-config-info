@@ -5,7 +5,7 @@
 #
 coverage:
     precision: 2
-    round: down
+    round: up
     range: 80...100
 
     status:
