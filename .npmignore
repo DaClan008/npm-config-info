@@ -6,3 +6,4 @@ typings
 .gitignore
 .travis.yml
 codecov.yml
+jsconfig.json
