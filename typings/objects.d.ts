@@ -1,7 +1,7 @@
 /**
  * General structure of a data object that we receive.
  */
-export interface configObject {
+declare type configObject = {
     long?: boolean;
     'metrics-registry'?: string;
     scope?: number;
@@ -124,14 +124,19 @@ export interface configObject {
     [key: string]: any;
 }
 
-export interface authorInformation {
+/**
+ * Contains the information related to the author (alternatively user)
+ */
+declare type authorInformation = {
     name?: string;
     email?: string;
     url?: string;
     value?: string;
 }
-
-export interface folderInformation {
+/**
+ * Contains all the relevant folder information
+ */
+declare type folderInformation = {
     userconfig?: string;
     tmp?: string;
     shell?: string;
@@ -144,8 +149,10 @@ export interface folderInformation {
     tmpuserconfig?: string;
     tmpglobalconfig?: string;
 }
-
-export interface initObject {
+/**
+ * Contains all the values that has been stored with the init- prefix.
+ */
+declare type initObject = {
     version?: string;
     descriptsion?: string;
     main?: string;

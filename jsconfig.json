@@ -1,0 +1,6 @@
+{
+	"compilerOptions": {
+		"checkJs": true
+	},
+	"exclude": ["index.d.ts"]
+}
