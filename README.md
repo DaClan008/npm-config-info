@@ -5,6 +5,7 @@
 [![codecov](https://codecov.io/gh/DaClan008/npm-config-info/branch/master/graph/badge.svg)](https://codecov.io/gh/DaClan008/npm-config-info)
 [![npm](https://img.shields.io/npm/v/npm-config-info)](https://img.shields.io/npm/v/npm-config-info)
 ![npm](https://img.shields.io/npm/dw/npm-config-info)
+![NPM](https://img.shields.io/npm/l/npm-config-info)
 
 Get the config information stored by npm. This include the stored user details and folder information of the npm structure. Refer to [change Logs](#change-log) for latest changes on the current version.
 
@@ -92,3 +93,4 @@ Contributions are welcome. This was a quick project as I required an easy way to
 **0.1.1**
 
 -   Fixing intelisense (d.ts) file for the enum globState.
+-   Adding license shield.
