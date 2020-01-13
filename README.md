@@ -4,6 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/DaClan008/npm-config-info/badge.svg?branch=master)](https://coveralls.io/github/DaClan008/npm-config-info?branch=master)
 [![codecov](https://codecov.io/gh/DaClan008/npm-config-info/branch/master/graph/badge.svg)](https://codecov.io/gh/DaClan008/npm-config-info)
 [![npm](https://img.shields.io/npm/v/npm-config-info)](https://img.shields.io/npm/v/npm-config-info)
+![npm](https://img.shields.io/npm/dw/npm-config-info)
 
 Get the config information stored by npm. This include the stored user details and folder information of the npm structure.
 
@@ -48,7 +49,7 @@ const configInfo = require("npm-config-info").getConfigSync();
 
 configInfo.getGlobal("/custom/destination/to/npmrc");
 
-if (configInfo.global.globalExist) {
+if (!configInfo.global.globalExist) {
 	if (configInfo.global !== "can't find configFile.") {
 		let author = configInfo.global.author;
 	}
@@ -68,4 +69,8 @@ console.loe(configInfo.globalExist);
 
 ## Contributions
 
-Constributions are welcome. This was a quick project as I required an easy way to access the stored author creditials from javascript.
+Contributions are welcome. This was a quick project as I required an easy way to access the stored author creditials from javascript.
+
+## Fixes
+
+-   Fixed Readme spelling errors.
