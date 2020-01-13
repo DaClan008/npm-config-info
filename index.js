@@ -1,7 +1,6 @@
 const { execSync, exec } = require("child_process");
 const { ConfigInfo, globState } = require("./lib/configInfo");
 
-// adding a testing comment
 /**
  * Compile the data available from npm config and returns a promise. (Async)
  * @param {boolean} includeGlobal Include the building of globals object.
