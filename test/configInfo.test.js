@@ -1,4 +1,4 @@
-const { ConfigInfo } = require("../lib/configInfo");
+const { ConfigInfo, globState } = require("../lib/configInfo");
 const fs = require("fs");
 const path = require("path");
 
@@ -14,6 +14,7 @@ describe("testing loader", () => {
         expect(typeof obj.init).toBe("object");
         expect(typeof obj.global).toBe("string");
         expect(obj.global).toBe("getGlobal function not yet called.");
+        expect(obj.globalState).toBe(globState.NotInitialized);
     });
 
     test('should work with data object', () => {

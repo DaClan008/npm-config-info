@@ -6,7 +6,7 @@
 [![npm](https://img.shields.io/npm/v/npm-config-info)](https://img.shields.io/npm/v/npm-config-info)
 ![npm](https://img.shields.io/npm/dw/npm-config-info)
 
-Get the config information stored by npm. This include the stored user details and folder information of the npm structure.
+Get the config information stored by npm. This include the stored user details and folder information of the npm structure. Refer to [change Logs](#change-log) for latest changes on the current version.
 
 ## Install
 
@@ -29,6 +29,7 @@ The code could also run asynchronously:
 
 ```js
 let configInfo;
+
 require("npm-config-info")
 	.getConfig()
 	.then(conf => {
@@ -45,18 +46,29 @@ We will attempt to figure out where the npmrc file resides.
 A string variable of where the global npmrc file could be found could also be provided in getGlobal e.g.:
 
 ```js
-const configInfo = require("npm-config-info").getConfigSync();
+const { configInfo, globState } = require("npm-config-info");
+
+let config = configInfo.getConfigSync();
+let globalAuthor;
 
 configInfo.getGlobal("/custom/destination/to/npmrc");
 
-if (!configInfo.global.globalExist) {
-	if (configInfo.global !== "can't find configFile.") {
-		let author = configInfo.global.author;
-	}
+if (configInfo.globalState === globState.Initialized) {
+	globalAuthor = configInfo.global.author;
+}
+
+// OR
+if (
+	configInfo.globalState !== globState.NotFound &&
+	configInfo.globalState !== globState.NotInitialized
+) {
+	globalAuthor = configInfo.global.author;
 }
 ```
 
 The global variables can also be created by the constructor:
+
+> **PLEASE NOTE**: although the state could be found on the global object (for now and if global has not been initialized or found). The correct state checking should happen through globalState property
 
 ```js
 const configInfo = require("npm-conif-info").getConfigSync(true);
@@ -71,6 +83,8 @@ console.loe(configInfo.globalExist);
 
 Contributions are welcome. This was a quick project as I required an easy way to access the stored author creditials from javascript.
 
-## Fixes
+## Change Log
 
 -   Fixed Readme spelling errors.
+-   Added a **globalState** variable to ConfigInfo (we should have done so from the start). For the moment global will still be an object or the value of globalState if no object could be found. String value on global property is preserved for now, but **should not be used**. For checking use globalState variable. State on "global" will be removed in future.
+-   Added an "**enum**" globaState to both index.js and ConfInfo.js.

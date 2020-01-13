@@ -39,11 +39,15 @@ declare class ConfigInfo {
      */
     init: initObject;
     /**
+     * Return the current state of the global Config object
+     */
+    globalState: globState;
+    /**
      * The general placeholder of the global npmrc file data.  Or string:
      * - "getGlobal function not yet called" is displayed if getGlobal has not yet been called.
      * - can't find config is displayed if we can't find the npmrc file.
      */
-    globalConfig: ConfigInfo | string;
+    global: ConfigInfo | string;
     /**
      * Updates the global variable.
      * @param {string} [configFile] An optional location to the global config file.
@@ -55,6 +59,12 @@ declare class ConfigInfo {
      */
     globalExist: boolean;
 }
+
+/**
+ * The available states for the global object.
+ */
+export type globState = "getGlobal function not yet called." | "can't find configFile." | "success";
+
 /**
  * General structure of a data object that we receive.
  */

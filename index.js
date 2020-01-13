@@ -1,5 +1,5 @@
 const { execSync, exec } = require("child_process");
-const { ConfigInfo } = require("./lib/configInfo");
+const { ConfigInfo, globState } = require("./lib/configInfo");
 
 /**
  * Compile the data available from npm config and returns a promise. (Async)
@@ -28,3 +28,4 @@ function getConfigSync(includeGlobal) {
 
 exports.getConfig = getConfig;
 exports.getConfigSync = getConfigSync;
+exports.globState = globState;
