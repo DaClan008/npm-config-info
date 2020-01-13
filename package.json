@@ -1,6 +1,6 @@
 {
   "name": "npm-config-info",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "An easy way to get npm user details or default values stored by npm.",
   "main": "index.js",
   "repository": {
