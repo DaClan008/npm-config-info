@@ -63,8 +63,14 @@ declare class ConfigInfo {
 /**
  * The available states for the global object.
  */
-export type globState = "getGlobal function not yet called." | "can't find configFile." | "success";
-
+export enum globState {
+    /** The global object has not yet been initialized. */
+    NotInitialized,
+    /** The global file could not be found. */
+    NotFound,
+    /** The global object has been initialized. */
+    Initialized
+}
 /**
  * General structure of a data object that we receive.
  */

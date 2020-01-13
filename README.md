@@ -88,3 +88,7 @@ Contributions are welcome. This was a quick project as I required an easy way to
 -   Fixed Readme spelling errors.
 -   Added a **globalState** variable to ConfigInfo (we should have done so from the start). For the moment global will still be an object or the value of globalState if no object could be found. String value on global property is preserved for now, but **should not be used**. For checking use globalState variable. State on "global" will be removed in future.
 -   Added an "**enum**" globaState to both index.js and ConfInfo.js.
+
+**0.1.1**
+
+-   Fixing intelisense (d.ts) file for the enum globState.
